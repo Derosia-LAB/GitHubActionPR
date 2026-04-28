@@ -5,8 +5,10 @@ on:
   - workflow_dispatch
 
 jobs:
-  
+  security-events: read
   lintingOperation: #name of job
+    permissions:
+      security-events: read
     runs-on: ubuntu latest #snowglobe to uses
     steps:
       - uses: actions/checkout@v6

@@ -5,7 +5,6 @@ on:
   - workflow_dispatch
 
 jobs:
-  security-events: read
   lintingOperation: #name of job
     permissions:
       security-events: read
